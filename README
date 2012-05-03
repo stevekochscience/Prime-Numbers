@@ -1,0 +1,25 @@
+This repository holds some R and python code as well as some csv and text files with lists of prime numbers
+
+Code is public domain, by Steven J. Koch, stevekochscience@gmail.com.  Except possibly the "sieve.py" code, which I adapted
+from Phillip Dorrell on github "zero-comments".  I didn't see his license information there, and it's a small bit of code,
+so I'm assuming it's also public domain.
+
+Instructions:
+
+1.  (optional) Edit file "sieve.py" and set the SIZE parameter to the upper limit of primes that you want to generate.
+    Some files already exist if you don't want to re-run sieve.py
+
+2.  (optional) Run "python sieve.py".  This will create a file of type p###.txt which lists all the prime numbers up to 
+    value SIZE
+    
+3.  Edit file "calclonelyfromprimes2.py" and set the SIZE parameter to correspond to a p###.txt file that you want to process
+
+4.  Run "python calclonelyfromprimes2.py".  If a correct p###.txt file is loaded, it will calculate the loneliness and set the
+    primes flag.  It will output a csv file with name "ls###.csv" and has three columns: integer prime, float loneliness, integer
+    Swiss prime flag
+    
+5.  Edit the R file, graphlonely2.r and change the filename to the corresponding ls###.csv file that you want to display
+
+6.  Run the R file to display the graph.  Magenta circles are the swiss primes.  Black circles are loneliness of all the primes.
+    If you want to save the graph, un-comment the png("filename.png") line and the last line, dev.off().  (I don't really
+    understand this, but it works)

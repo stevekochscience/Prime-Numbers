@@ -3,6 +3,9 @@
 # each row increases with size being the next prime number
 # i created this program to see if I see patterns when printing
 # prime numbers this way
+# this is based on trinum.py but will output coordinates for 
+# graphing (such as in R)
+
 SIZE = 510510
 BLANK = "     "
 B = 5
@@ -18,22 +21,24 @@ for line in f:
 cc = 0 # column count
 lc = 0 # line count
 
-outfile = open('pt%d.txt' %SIZE, 'w')
+outfile = open('ptc%d.txt' %SIZE, 'w')
     
 for i in range(2,SIZE):
     if i in p:
         # print repr(i).rjust(B),
-        outfile.write(repr(i).rjust(B))
+        outfile.write("%d,%d,%d\n" %(i, cc, lc))
+        # outfile.write(repr(i).rjust(B))
     else:
         # print BLANK,
-        outfile.write(BLANK)
+        #outfile.write(BLANK)
+        pass
         
     cc += 1
     if cc == p[lc]:
         lc += 1
         cc = 0
         #print
-        outfile.write('\n')
+        #outfile.write('\n')
     else:
         pass
         

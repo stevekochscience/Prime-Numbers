@@ -3,7 +3,7 @@
 # each row increases with size being the next prime number
 # i created this program to see if I see patterns when printing
 # prime numbers this way
-SIZE = 510510
+SIZE = 9699690
 BLANK = "     "
 B = 5
 

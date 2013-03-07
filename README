@@ -1,3 +1,7 @@
+2013-03-07 Note: I have since learned that the Eratothenes sieve is way slower than the Atkin Sieve which DJ Bernstein
+uses with "primegen."  "In other words, Eratosthenes is past his prime." quoted from 
+http://thedjbway.b0llix.net/scientific/primegen.html
+
 This repository holds some R and python code as well as some csv and text files with lists of prime numbers
 
 Code is public domain, by Steven J. Koch, stevekochscience@gmail.com.  Except possibly the "sieve.py" code, which I adapted
